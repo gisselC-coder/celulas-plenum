@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Fascinate+Inline&family=Londrina+Shadow&family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <title>Células Plenum | Unidad 2</title>
+</head>
+<body class="con-sidebar">
+   <header id="inicio">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="unidad1.html">Unidad 1</a>
+            <a href="#" class="activo">Unidad 2</a>
+            <a href="unidad3.html">Unidad 3</a>
+            <a href="sesiones.html">Sesiones</a>
+        </nav>
+    </header>
+    <hr>
+    
+    <aside class="sidebar">
+        <img src="img/celulasPlenum.png" alt="Logo Células Plenum" class="logoCP">
+        <a href="#inicio" class="button">
+            <img src="img/subir.png" alt="Botón Subir">
+        </a>
+        <a href="#intro" class="indice">Introducción a la Unidad 2</a>
+        
+        <details>
+            <summary>Tema 2.1</summary>
+            <ul>
+                <li><a href="#2.1.1">2.1.1 Viaje al Fondo de los Datos</a></li>
+                <li><a href="#2.1.2">2.1.2 Bases de datos relacionales</a></li>
+                <li><a href="#2.1.3">2.1.3 Relaciones entre tablas</a></li>
+                <li><a href="#2.1.4">2.1.4 SQL fácil, fácil</a></li>
+                <li><a href="#Doc2.1">Documento del Tema 2.1</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Tema 2.2</summary>
+            <ul>
+                <li><a href="#2.2.1">2.2.1 Normalización</a></li>
+                <li><a href="#2.2.2">2.2.2 Primera Forma Normal</a></li>
+                <li><a href="#2.2.3">2.2.3 Segunda Forma Normal</a></li>
+                <li><a href="#2.2.4">2.2.4 Tercera Forma Normal</a></li>
+                <li><a href="#2.2.5">2.2.5 Desnormalización de BD</a></li>
+                <li><a href="#Doc2.2">Documento del Tema 2.2</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Tema 2.3</summary>
+            <ul>
+                <li><a href="#2.3.1">2.3.1 Lenguaje de Consulta Estructurado (SQL) | Conceptos básicos</a></li>
+                <li><a href="#2.3.2">2.3.2 CursoSQL</a></li>
+                <li><a href="#Doc2.3">Documento del Laboratorio 2.3</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>Tema 2.4</summary>
+            <ul>
+                <li><a href="#2.4.1">2.4.1 Introducción SQL Oracle</a></li>
+                <li><a href="#2.4.2">2.4.2 Talleres Oracle : Uso de Triggers</a></li>
+                <li><a href="#2.4.3">2.4.3 Triggers: Curso de Microsoft SQL Server</a></li>
+                <li><a href="#2.4.4">2.4.4 Triggers-Disminuir existencia inventario (Microsoft SQL Server)</a></li>
+                <li><a href="#Doc2.4">Documento del Laboratorio 2.4</a></li>
+            </ul>
+        </details>
+
+         <details>
+            <summary>Tema 2.5</summary>
+            <ul>
+                <li><a href="#2.5.1">2.5.1 Programming Paradigms, Assembly, Procedural</a></li>
+                <li><a href="#2.5.2">2.5.2 Paradigmas de programación</a></li>
+                <li><a href="#2.5.3">2.5.3 El paradigma de programación orientado a objetos</a></li>
+                <li><a href="#2.5.4">2.5.4 Fundamentos de la Programación Orientada a Objetos</a></li>
+                <li><a href="#2.5.5">2.5.5 Programación Orientada a Objetos (POO) -Objetos y Clases</a></li>
+                <li><a href="#2.5.6">2.5.6 Object Oriented Concepts</a></li>
+                <li><a href="#2.5.7">2.5.7 Intro to Object Oriented Programming</a></li>
+                <li><a href="#2.5.8">2.5.8 ¿Qué es la programación orientada a objetos?</a></li>
+                <li><a href="#2.5.9">2.5.9 Programación Orientada a Objetos explicada</a></li>
+                <li><a href="#2.5.10">2.5.10 Qué es la programación orientada a objetos</a></li>
+                <li><a href="#Doc2.5">Documento del Tema 2.5</a></li>
+            </ul>
+        </details>
+
+         <details>
+            <summary>Tema 2.6</summary>
+            <ul>
+                <li><a href="#2.6.1">2.6.1 Difference between Java and JavaScript.</a></li>
+                <li><a href="#2.6.2">2.6.2 Java vs JavaScript.</a></li>
+                <li><a href="#2.6.3">2.6.3 Curso de programación en Java.</a></li>
+                <li><a href="#2.6.4">2.6.4 Curso Java y MySQL.</a></li>
+                <li><a href="#Doc2.6">Documento del Laboratorio 2.6</a></li>
+            </ul>
+        </details>
+
+         <details>
+            <summary>Tema 2.7</summary>
+            <ul>
+                <li><a href="#2.7.1">2.7.1 Arquitectura del software multicapa.</a></li>
+                <li><a href="#2.7.2">2.7.2 ¿Qué es BACKEND y FRONTEND?</a></li>
+                <li><a href="#2.7.3">2.7.3 API: ¿Qué es y para qué sirve?</a></li>
+                <li><a href="#2.7.4">2.7.4 ¿Qué es una API?</a></li>
+                <li><a href="#2.7.5">2.7.5 Diferencia entre API y Webservice.</a></li>
+                <li><a href="#2.7.6">2.7.6 ¿Qué es una API HTTP? | ¿Cómo usar una API?</a></li>
+                <li><a href="#2.7.7">2.7.7 ¿Qué es una API REST?</a></li>
+                <li><a href="#Doc2.7">Documento del Tema 2.7</a></li>
+            </ul>
+        </details>
+        <footer>
+            <p>© 2026 Gisselle Cabrera</p>
+        </footer>
+    </aside>
+    <main>
+        <p class="center text27">Unidad 2 - Fundamentos de Programación</p>
+        <hr>
+        <section id="intro">
+            <p class="center text25">Introducción a la Unidad 2</p>
+            <p>Bienvenido al Módulo 2. 
+                    El objetivo es que los estudiantes repasen conceptos básicos 
+                    de programación que han aprendido durante su formación académica 
+                    y que son indispensables para los siguientes módulos del 
+                    Programa Células Plenum.
+                </p>
+                <p class="marco">
+                    <img src="img/temario-u2.png" alt="Temario u1" width="550">
+                </p>
+            </section>
+            <br><hr>
+            <section id="2.1">
+                <p class="center text25">2.1 Bases de Datos Relacionales</p>
+                <article id="2.1.1">
+                    <p>2.1.1 Viaje al Fondo de los Datos</p>
+                    <p>A continuación te compartimos el enlace de la lista de reproducción para su consulta:</p>
+                    <a href="https://youtube.com/playlist?list=PLGC1kwoNMbVZG2QaDnd6ME_lqNF4GF4S4" target="_blank" class="link">
+                        https://youtube.com/playlist?list=PLGC1kwoNMbVZG2QaDnd6ME_lqNF4GF4S4
+                    </a>
+                    <h3>Instrucciones</h3>
+                    <p>Ver el curso completo de la lista de reproducción.</p>
+                    <p>Recomendación: Pausar el video cuando se presente una gráfica o tabla para su análisis.</p>
+                </article>
+                <br>
+                <article id="2.1.2">
+                    <p>2.1.2 Bases de datos relacionales</p>
+                    <p>A continuación te compartimos el enlace de la lista de reproducción para su consulta:</p>
+                    <a href="https://youtube.com/playlist?list=PL3y8v30wQ1s9e6TS_fGGhhuVFOa3w-6G2" target="_blank" class="link">
+                        https://youtube.com/playlist?list=PL3y8v30wQ1s9e6TS_fGGhhuVFOa3w-6G2
+                    </a>
+                    <h3>Instrucciones</h3>
+                    <p>Ver el curso completo de la lista de reproducción.</p>
+                    <p>Recomendación: Pausar el video cuando se presente una gráfica o tabla para su análisis.</p>            
+                </article>
+                <br>
+                <article id="2.1.3">
+                    <p>2.1.3 Relaciones entre tablas</p>
+                    <p>A continuación te compartimos el enlace de la lista de reproducción para su consulta:</p>
+                    <a href="https://youtube.com/playlist?list=PLi_UneHMpzONsjIf0xl-02eQIAH7T2_t8" target="_blank" class="link">
+                        https://youtube.com/playlist?list=PLi_UneHMpzONsjIf0xl-02eQIAH7T2_t8
+                    </a>
+                    <h3>Instrucciones</h3>
+                    <p>Ver el curso completo de la lista de reproducción.</p>
+                </article>
+                <br>
+                <article id="2.1.4">
+                    <p>2.1.4 SQL fácil, fácil</p>
+                    <p>A continuación te compartimos el enlace de la lista de reproducción para su consulta:</p>
+                    <a href="https://youtube.com/playlist?list=PLi_UneHMpzON3xmBc6_JfFRz7BMFk14Kl" target="_blank" class="link">
+                        https://youtube.com/playlist?list=PLi_UneHMpzON3xmBc6_JfFRz7BMFk14Kl
+                    </a>
+                    <h3>Instrucciones</h3>
+                    <p>Ver el curso completo de la lista de reproducción.</p>
+                    <p>Recomendación: Pausar el video cuando se presente una gráfica o tabla para su análisis.</p>
+                </article>
+                <br>
+                <article id="Doc2.1">
+                    <p>Documento del Tema 2.1</p>
+                    <p class="marco">
+                        <iframe 
+                        src="https://docs.google.com/presentation/d/e/2PACX-1vS9sN9xFY4iNYdvW0guDg933KSvBU4VZ20k3dY92RsAjNf7STbWq8jOZKhvNoQzCw/pubembed?start=false&loop=true&delayms=3000" 
+                        frameborder="0" width="760" height="464" 
+                        allowfullscreen="true" 
+                        mozallowfullscreen="true" webkitallowfullscreen="true">
+                        </iframe>
+                    </p>
+                </article>
+            </section>
+            <br><hr>
+            <section id="2.2">
+                <p class="center text25">2.2 Normalización</p>
+                <article id="2.2.1">
+                    <p>2.2.1 Normalización</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/JRCjSUbYKxI"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.2.2">
+                    <p>2.2.2 Primera Forma Normal</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/JZmSYf5J0C8"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.2.3">
+                    <p>2.2.3 Segunda Forma Normal</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/FlG-0LMXgzE"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.2.4">
+                    <p>2.2.4 Tercera Forma Normal</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/g76kIh_jdLQ"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.2.5">
+                    <p>2.2.5 Desnormalización de BD</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/2A2183jBLrg"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="Doc2.2">
+                    <p>Documento del Tema 2.2</p>
+                    <p class="marco">
+                        <iframe 
+                        src="https://docs.google.com/presentation/d/e/2PACX-1vSTINzm3Fmu-Getnh186CZ0JzfVzeGksN1eLYCfBQh9iQ_-tI_sj8Q_B1cftjJ-_w/pubembed?start=false&loop=true&delayms=3000" 
+                        frameborder="0" width="760" height="464" 
+                        allowfullscreen="true" 
+                        mozallowfullscreen="true" webkitallowfullscreen="true">
+                        </iframe>
+                    </p>
+                </article>
+            </section>
+            <br><hr>
+            <section id="2.3">
+                <p class="center text25">2.3 SQL</p>
+                <article id="2.3.1">
+                    <p>2.3.1 Lenguaje de Consulta Estructurado (SQL) | Conceptos básicos</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/HlRhFDY1Bmg"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                    <h3>Nota:</h3>
+                    <p>Ver los primeros 12 minutos, no es necesario ver el video completo.</p>
+                </article>
+                <br>
+                <article id="2.3.2">
+                    <p>2.3.2 CursoSQL</p>
+                    <p>A continuación te compartimos el enlace de la lista de reproducción para su consulta:</p>
+                    <a href="https://youtube.com/playlist?list=PLU8oAlHdN5Bmx-LChV4K3MbHrpZKefNwn" target="_blank" class="link">
+                        https://youtube.com/playlist?list=PLU8oAlHdN5Bmx-LChV4K3MbHrpZKefNwn
+                    </a>
+                    <h3>Instrucciones</h3>
+                    <p>Ver el curso completo de la lista de reproducción.</p>
+                    <p>Puedes ver aceleradamente los conceptos ya conocidos (1.25x, 1.5x, 2x).</p>
+                </article>
+                <br>
+                <article id="Doc2.3">
+                    <p>Documento del Laboratorio 2.3</p>
+                    <p class="marco">
+                        <iframe src="docs/2.3_SQL.pdf" width="760" height="600"></iframe>
+                    </p>
+                </article>
+            </section>
+            <br><hr>
+            <section id="2.4">
+                <p class="center text25">2.4 Triggers</p>
+                <article id="2.4.1">
+                    <p>2.4.1 Introducción SQL Oracle</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/Hb4wkSClKec"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.4.2">
+                    <p>2.4.2 Talleres Oracle : Uso de Triggers</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/DRon_SFQ5IY"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.4.3">
+                    <p>2.4.3 Triggers: Curso de Microsoft SQL Server</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/jLk4BtAKZUM"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.4.4">
+                    <p>2.4.4 Triggers-Disminuir existencia inventario (Microsoft SQL Server)</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/d6Vm5LRSMYM"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="Doc2.4">
+                    <p>Documento del Laboratorio 2.4</p>
+                    <p class="marco">
+                        <iframe src="docs/2.4_TRIGGERS.pdf" width="760" height="600"></iframe>
+                    </p>
+                </article>
+            </section>
+            <br><hr>
+            <section id="2.5">
+                <p class="center text25">2.5 Programación Orientada a Objetos</p>
+                <article id="2.5.1">
+                    <p>2.5.1 Programming Paradigms, Assembly, Procedural</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/AmS2-9KEeS0"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.5.2">
+                    <p>2.5.2 Paradigmas de programación</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/91iQAWCiiCo"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.5.3">
+                    <p>2.5.3 El paradigma de programación orientado a objetos</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/hkRvEgnmXkI"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.5.4">
+                    <p>2.5.4 Fundamentos de la Programación Orientada a Objetos</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/AAKoccH230Y"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.5.5">
+                    <p>2.5.5 Programación Orientada a Objetos (POO) -Objetos y Clases</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/ykpT5P7171M"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.5.6">
+                    <p>2.5.6 Object Oriented Concepts</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/3bMsY5a7cBo"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.5.7">
+                    <p>2.5.7 Intro to Object Oriented Programming</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/SiBw7os-_zI"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.5.8">
+                    <p>2.5.8 ¿Qué es la programación orientada a objetos?</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/DlphYPc_HKk"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.5.9">
+                    <p>2.5.9 Programación Orientada a Objetos explicada</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/Nka4JSBgf7I"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.5.10">
+                    <p>2.5.10 Qué es la programación orientada a objetos</p>
+                    <p>Revisa el siguiente enlace:</p>
+                    <a href="https://desarrolloweb.com/articulos/499.php#:~:text=La%20programaci%C3%B3n%20Orientada%20a%20objetos%20se%20define%20como%20un%20paradigma,los%20objetivos%20de%20las%20aplicaciones" target="_blank" class="link">
+                        https://desarrolloweb.com/articulos/499.php#:~:text=La%20programaci%C3%B3n%20Orientada<br>
+                        %20a%20objetos%20se%20define%20como%20un%20paradigma,los%20objetivos%20de%20las%20aplicaciones
+                    </a>
+                </article>
+                <br>
+                <article id="Doc2.5">
+                    <p>Documento del Tema 2.5</p>
+                    <p class="marco">
+                        <iframe 
+                        src="https://docs.google.com/presentation/d/e/2PACX-1vSXaNHi1etp0IRYpqoC0tBxoSOsNBF6H4pR9cS45kTpbL5446I1h21AkbV-d0AQ2Q/pubembed?start=false&loop=true&delayms=3000" 
+                        frameborder="0" width="760" height="464" 
+                        allowfullscreen="true" 
+                        mozallowfullscreen="true" webkitallowfullscreen="true">
+                        </iframe>
+                    </p>
+                </article>
+            </section>
+            <br><hr>
+            <section id="2.6">
+                <p class="center text25">2.6 Práctica de Java y MySQL</p>
+                <article id="2.6.1">
+                    <p>2.6.1 Difference between Java and JavaScript.</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/k0SMuHlmATs"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.6.2">
+                    <p>2.6.2 Java vs JavaScript.</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/Wpeym1_lmPo"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.6.3">
+                    <p>2.6.3 Curso de programación en Java.</p>
+                    <p>A continuación te compartimos el enlace de la lista de reproducción para su consulta:</p>
+                    <a href="https://www.youtube.com/playlist?list=PL-Mlm_HYjCo9vojnWbPTs6nV51J8WV_O5" target="_blank">
+                        https://www.youtube.com/playlist?list=PL-Mlm_HYjCo9vojnWbPTs6nV51J8WV_O5</a>
+                    <h3>Instrucciones</h3>
+                    <p>Ver el curso completo en el día 1.</p>
+                </article>
+                <br>
+                <article id="2.6.4">
+                    <p>2.6.4 Curso Java y MySQL.</p>
+                    <p>A continuación te compartimos el enlace de la lista de reproducción para su consulta:</p>
+                    <a href="https://www.youtube.com/playlist?list=PL-Mlm_HYjCo_uketceEXL4CuoPf9t38FZ" target="_blank">
+                        https://www.youtube.com/playlist?list=PL-Mlm_HYjCo_uketceEXL4CuoPf9t38FZ</a>
+                    <h3>Instrucciones</h3>
+                    <p>Ver al menos los primeros 3 videos en el día 1.</p>
+                </article>
+                <br>
+                <article id="Doc2.6">
+                    <p>Documento del Laboratorio 2.6</p>
+                    <p class="marco">
+                        <iframe src="docs/2.6_JavaMySQL.pdf" width="760" height="600"></iframe>
+                    </p>
+                </article>
+            </section>
+            <br><hr>
+            <section id="2.7">
+                <p class="center text25">2.7 Arquitectura de software multicapa.</p>
+                <article id="2.7.1">
+                    <p>2.7.1 Arquitectura del software multicapa.</p>
+                    <p class="marco">
+                        <iframe width="760" height="480"
+                        src="https://www.youtube.com/embed/kHvxX1E9vIU"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.7.2">
+                    <p>2.7.2 ¿Qué es BACKEND y FRONTEND?</p>
+                    <p class="marco">
+                        <iframe width="760" height="460"
+                        src="https://www.youtube.com/embed/50RbVujPPGs"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.7.3">
+                    <p>2.7.3 API: ¿Qué es y para qué sirve?</p>
+                    <p>
+                        <p>A continuación te compartimos el enlace  para su consulta:</p>
+                        <a href="https://www.xataka.com/basics/api-que-sirve" target="_blank">
+                            https://www.xataka.com/basics/api-que-sirve</a>
+                    </p>    
+                </article>
+                <br>
+                <article id="2.7.4">
+                    <p>2.7.4 ¿Qué es una API?</p>
+                    <p class="marco">
+                        <iframe width="760" height="515"
+                        src="https://www.youtube.com/embed/mawPztD3zl0"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.7.5">
+                    <p>2.7.5 Diferencia entre API y Webservice.</p>
+                    <p class="marco">
+                        <iframe width="760" height="440"
+                        src="https://www.youtube.com/embed/SXZ0kDZbOas"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="2.7.6">
+                    <p>2.7.6 ¿Qué es una API HTTP? | ¿Cómo usar una API?</p>
+                    <p class="marco">
+                        <iframe width="760" height="440"
+                        src="https://www.youtube.com/embed/Nw07gG6lf54"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>    
+                <article id="2.7.7">
+                    <p>2.7.7 ¿Qué es una API REST?</p>
+                    <p class="marco">
+                    <iframe width="760" height="440"
+                        src="https://www.youtube.com/embed/lsMQRaeKNDk"
+                        frameborder="0"
+                        allowfullscreen>
+                        </iframe>
+                    </p>
+                </article>
+                <br>
+                <article id="Doc2.7">
+                    <p>Documento del Tema 2.7</p>
+                    <p class="marco">
+                        <iframe 
+                        src="https://docs.google.com/presentation/d/e/2PACX-1vRMD9qAjcyy8z6Bk6idH42kg196h8cXzukKhll5bN78Yrm0294ceYMkfj9oEEVEmA/pubembed?start=false&loop=true&delayms=3000" 
+                        frameborder="0" width="760" height="464" 
+                        allowfullscreen="true" 
+                        mozallowfullscreen="true" webkitallowfullscreen="true">
+                        </iframe>
+                    </p>
+                </article>
+            </section>
+            <br><br>
+    </main>
+</body>
+</html>
