@@ -20,16 +20,14 @@
 /* ____________________________________________________________________________________LOGOS */
 
 .logos {
-    width: 200px;
-    padding: 15px;
-    right: 0;
+    display: flex;
+    padding: 10px;
 }
 
 .logoCP {
     width: 250px;
     display: block;
     margin: auto;
-    padding: 15px;
 }
 
 .logoP {
@@ -99,21 +97,14 @@
 
 .londrina {
     font-family: "Londrina Shadow", sans-serif;
-    font-weight: 400;
+    font-size: 35px;
     font-style: normal;
-}
-
-/* tablet */
-@media (max-width: 850px){
-    .londrina{
-        font-size: 40px;
-    }
 }
 
 /* celular */
 @media (max-width: 600px){
     .londrina{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -341,9 +332,4 @@ summary:hover {
 .slides img:hover {
     transform: scale(1.05);
 }
-
-
-
-
-
 
