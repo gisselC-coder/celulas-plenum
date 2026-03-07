@@ -1,0 +1,344 @@
+.con-sidebar {
+    margin: 0;
+    margin-left: 350px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 23px;
+}
+
+.sin-sidebar {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.menu {
+    background-color: #b8dffa;
+}
+
+/* ____________________________________________________________________________________LOGOS */
+
+.logos {
+    width: 200px;
+    padding: 15px;
+    right: 0;
+}
+
+.logoCP {
+    width: 250px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+.logoP {
+    display: block;
+    margin: auto;
+    width: 700px;
+
+}
+
+.logoCP-anim {
+    position: fixed;
+    width: 150px;
+    animation-name: parpadeo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 1000;
+}
+
+.l1 { 
+    top: 400px; 
+    left: 20px;
+    animation-duration: 2.5s; 
+}
+.l2 { 
+    bottom: 90px; 
+    right: 30px; 
+    animation-duration: 2s;
+}
+.l3 { 
+    top: 200px; 
+    right: 65px;
+    animation-duration: 1.5s;
+}
+
+.l1:hover, .l2:hover, .l3:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes parpadeo {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* ____________________________________________________________________________________TEXTO */
+
+.center {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.text25 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.text27 {
+    font-size: 27px;
+}
+
+.patrick {
+    font-family: "Patrick Hand", cursive;
+}
+
+.londrina {
+    font-family: "Londrina Shadow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* tablet */
+@media (max-width: 850px){
+    .londrina{
+        font-size: 40px;
+    }
+}
+
+/* celular */
+@media (max-width: 600px){
+    .londrina{
+        font-size: 25px;
+    }
+}
+
+/* ____________________________________________________________________________________MARCO */
+
+.marco {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    margin: 30px auto;
+    width: fit-content;
+    background: linear-gradient(135deg, #5ea1d0, #ffffff);
+    border-radius: 20px;
+    border: 4px solid #64b5f6;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.marco iframe {
+    border-radius: 15px;
+    border: 5px solid #1e88e5;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ____________________________________________________________________________________ZONA SUPERIOS INDEX */
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.top-header p{
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+/* ____________________________________________________________________________________MENU */
+
+.menu {
+    display: flex;
+    padding-top: 12px;
+    width: 100%;
+    height: 50px;
+    gap: 20px;
+    border-bottom: solid 2px #1e88e5;
+    border-top: solid 2px #1e88e5;
+    justify-content: center;
+}
+
+.menu a {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+/* reduce tamaño */
+@media (max-width: 500px){
+    .menu a {
+        font-size: 15px;
+    }
+    .menu {
+        gap: 10px;
+    }
+}
+
+.menu a:hover{
+    color: #44a3e3;
+}
+
+.menu a.activo {
+    color: black;
+    text-decoration: underline;
+    cursor: default;
+}
+
+/* ____________________________________________________________________________________BOTON SUBIR */
+
+.button {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 7px;
+    bottom: 0;
+    text-decoration: none;
+    background: white;
+    border-radius: 50%; 
+    cursor: pointer;
+    animation: quitarFondo 1s ease forwards;
+}
+
+@keyframes quitarFondo {
+    from { background: white; }
+    to { background: transparent; }
+}
+
+.button img {
+    height: 100%;
+    width: 100%
+}
+
+.button:hover {
+    animation: brillo 0.8s infinite alternate;
+}
+
+@keyframes brillo {
+    from { filter: brightness(4); }
+    to { filter: brightness(1.3); }
+}
+
+/* ____________________________________________________________________________________MENU LATERAL */
+
+.sidebar {
+    font-family: "Patrick Hand", sans-serif;
+    font-size: 22px;
+    background-color: #87c1ea;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 320px;
+    border-right: 1px solid #ccc;
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    padding: 25px;
+    color: black;
+}
+
+.sidebar a:hover {
+    color: #44a3e3;
+}
+
+.sidebar a, .sidebar details {
+    margin-bottom: 10px;
+}
+
+.sidebar a, .sidebar summary {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #b8dffa;
+    border-radius: 5px;
+    line-height: normal;
+}
+
+summary:hover {
+    color: #44a3e3;
+}
+
+.sin-sidebar footer {
+    margin-top: auto;
+    background-color: #b8dffa;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+}
+
+.con-sidebar footer p {
+    margin: 0;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-left: 15px;
+}
+
+
+
+.sin-sidebar footer p {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    border-top: 3px solid #44a3e3;
+}
+/* ____________________________________________________________________________________CARRUSEL */
+
+.carrusel {
+    width: 850px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    animation: deslizar 10s infinite;
+}
+
+@keyframes deslizar {
+    0%   { transform: translateX(0); }
+    15%  { transform: translateX(0); }
+
+    20%  { transform: translateX(-100%); }
+    35%  { transform: translateX(-100%); }
+
+    40%  { transform: translateX(-200%); }
+    55%  { transform: translateX(-200%); }
+
+    60%  { transform: translateX(-300%); }
+    75%  { transform: translateX(-300%); }
+
+    80%  { transform: translateX(-400%); }
+    95%  { transform: translateX(-400%); }
+
+    100% { transform: translateX(0); }
+}
+
+.slides img {
+    width: 850px;
+    transition: transform 0.4s ease;
+}
+
+.carrusel:hover .slides {
+    animation-play-state: paused;
+}
+
+.slides img:hover {
+    transform: scale(1.05);
+}
+
