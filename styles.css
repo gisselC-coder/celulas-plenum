@@ -1,0 +1,331 @@
+
+/* ____________________________________________________________________________________LOGOS */
+
+.logos {
+    width: 200px;
+    margin: 0 autos;
+}
+
+.logoCP {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.logoP {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 600px;
+
+}
+
+.logoCP-anim {
+    position: fixed;
+    width: 150px;
+    animation-name: parpadeo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 1000;
+}
+
+.l1 { 
+    top: 500px; 
+    left: 20px;
+    animation-duration: 2.5s; 
+}
+.l2 { 
+    bottom: 90px; 
+    right: 30px; 
+    animation-duration: 2s;
+}
+.l3 { 
+    top: 300px; 
+    right: 65px;
+    animation-duration: 1.5s;
+}
+
+.l1:hover, .l2:hover, .l3:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes parpadeo {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+/* ____________________________________________________________________________________TEXTO */
+
+p, .link {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 18px;
+}
+
+
+mark {
+    background-color: #83c0ec;
+    padding: 2px 6px;
+    line-height: 1.5;
+}
+
+.center {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+.patrick {
+    font-family: "Patrick Hand", cursive;
+}
+
+.londrina {
+    padding-top: 10px;
+    text-align: center;
+    font-family: "Londrina Shadow", sans-serif;
+    font-size: 45px;
+    font-style: normal;
+}
+
+/* celular */
+@media (max-width: 800px){
+    .londrina{
+        font-size: 30px;
+    }
+}
+
+/* ____________________________________________________________________________________MARCO */
+
+.marco{
+    padding: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    background: linear-gradient(135deg, #5ea1d0, #ffffff);
+    border-radius: 20px;
+    border: 4px solid #64b5f6;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.marco iframe {
+    border: 5px solid #1e88e5;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ____________________________________________________________________________________MENU */
+
+.menu {
+    background-color: #b8dffa;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    gap: 50px;
+    border-bottom: solid 2px #1e88e5;
+    border-top: solid 2px #1e88e5;
+    justify-content: center;
+}
+
+.menu a {
+    font-family: "Patrick Hand", cursive;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* reduce tamaño */
+@media (max-width: 550px){
+    .menu a {
+        font-size: 18px;
+    }
+    .menu {
+        gap: 15px;
+    }
+}
+
+.menu a:hover{
+    color: #44a3e3;
+}
+
+.menu a.activo {
+    color: #44a3e3;
+    text-decoration: underline;
+    cursor: default;
+}
+
+/* ____________________________________________________________________________________BOTON SUBIR */
+
+.button {
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    right: 7px;
+    bottom: 0;
+    text-decoration: none;
+    background: white;
+    border-radius: 50%; 
+    cursor: pointer;
+    animation: quitarFondo 1s ease forwards;
+}
+
+@keyframes quitarFondo {
+    from { background: white; }
+    to { background: transparent; }
+}
+
+.button img {
+    height: 100%;
+    width: 100%
+}
+
+.button:hover {
+    animation: brillo 0.8s infinite alternate;
+}
+
+@keyframes brillo {
+    from { filter: brightness(4); }
+    to { filter: brightness(1.3); }
+}
+
+/* ____________________________________________________________________________________MENU LATERAL */
+
+.sidebar {
+    font-family: "Patrick Hand", sans-serif;
+    font-size: 22px;
+    background-color: #83c0ec;
+    border-right: 1px solid #ccc;
+    flex-direction: column;
+    padding: 10px;
+}
+
+@media (max-width: 991px) {
+  #sidebarMenu {
+    height: 480px;       /* altura del collapse */
+    overflow-y: auto;    /* scroll interno */
+    position: sticky;  /* quita sticky */
+    top: 26px;
+    left: 0;
+    z-index: 1020;
+  }
+  #sidebarMenu .sidebar {
+    height: auto;        /* ocupa toda la altura del collapse */
+  }
+}
+
+/* Escritorio (lg y arriba) */
+@media (min-width: 992px) {
+  .sidebar {
+    position: fixed;   /* se queda pegado al hacer scroll */
+    top: 0;
+    left: 0;
+    height: 100vh;      /* ocupa toda la altura de la ventana */
+    overflow: auto;     /* scroll si el contenido excede */
+    width: 270px;
+  }
+  body {
+    margin-left: 270px;
+  }
+}
+
+
+
+.sidebar a {
+    text-decoration: none;
+    padding: 25px;
+    color: black;
+}
+
+.sidebar a:hover {
+    color: #44a3e3;
+}
+
+.sidebar a, .sidebar summary {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #b8dffa;
+    border-radius: 5px;
+    line-height: normal;
+}
+
+summary:hover {
+    color: #44a3e3;
+}
+
+.footerIndex {
+    background-color: #b8dffa;
+    border-top: 3px solid #44a3e3;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footerIndex p {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-left: 30px;
+    margin: 0;
+}
+
+/* ____________________________________________________________________________________CARRUSEL */
+
+
+.carrusel {
+    overflow: hidden;
+    margin: 10px;
+    margin-top: 0;
+    border-radius: 20px;
+    position: sticky;
+}
+
+@media (max-width: 950px){
+    .l3 {
+        visibility: hidden;
+    }
+}
+
+/*
+.slides {
+    display: flex;
+    animation: deslizar 10s infinite;
+}
+
+@keyframes deslizar {
+    0%   { transform: translateX(0); }
+    15%  { transform: translateX(0); }
+
+    20%  { transform: translateX(-100%); }
+    35%  { transform: translateX(-100%); }
+
+    40%  { transform: translateX(-200%); }
+    55%  { transform: translateX(-200%); }
+
+    60%  { transform: translateX(-300%); }
+    75%  { transform: translateX(-300%); }
+
+    80%  { transform: translateX(-400%); }
+    95%  { transform: translateX(-400%); }
+
+    100% { transform: translateX(0); }
+}
+
+.slides img {
+    width: 850px;
+    transition: transform 0.4s ease;
+}
+
+.carrusel:hover .slides {
+    animation-play-state: paused;
+}
+
+.slides img:hover {
+    transform: scale(1.05);
+} */
